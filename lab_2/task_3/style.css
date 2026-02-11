@@ -79,18 +79,18 @@ h1.title {
     top: -0.9em;
     padding-right:4px;
 }
-.price sub{
+
+.button a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    box-sizing: b.price sub{
     font-weight: 600;
     font-size: 20px;
     position: relative;
     top: -0.2em;
     padding: 0 5px;
-}
-.button a{
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
+}order-box;
     text-align: center;
 }
 .button {

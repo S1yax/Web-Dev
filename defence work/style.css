@@ -1,0 +1,25 @@
+body{
+    background: #1a1a2e;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+}
+summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2d333b;
+    padding: 4px 0;
+}
