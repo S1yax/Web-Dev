@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script>
+            // While loop
+            let i = 0;
+            while (i < 3) {
+                alert(i);
+                i++;
+            }
+
+            // Do...while loop
+            let j = 0;
+            do {
+                alert(j);
+                j++;
+            } while (j < 3);
+
+            // For loop
+            for (let k = 0; k < 3; k++) {
+                alert(k);
+            }
+
+            // Breaking the loop
+            let sum = 0;
+            while (true) {
+                let value = +prompt("Enter a number", '');
+                if (!value) break; // stop if the input is not a number
+                sum += value;
+            }
+            alert('Sum: ' + sum);
+
+            // Continue to the next iteration
+            for (let n = 0; n < 10; n++) {
+                if (n % 2 === 0) continue; // skip even numbers
+                alert(n); // 1, 3, 5, 7, 9
+            }   
+
+            // Labelled loops
+            outer: for (let a = 0; a < 3; a++) {
+                for (let b = 0; b < 3; b++) {
+                    let input = prompt(`Value at coords (${a},${b})`, '');
+                    if (!input) break outer; // breaks the outer loop
+                }
+            }   
+
+            
+        </script>
+    </body>
+</html>

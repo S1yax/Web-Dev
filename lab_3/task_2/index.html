@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>To do list</h1>
+</header>
+
+<main class="container">
+    <form id="to_do_form" class="todo_form">
+        <label for="to_do_input">    To Do List</label>
+        <div class="input-group">
+            <input 
+                type="text" 
+                id="to_do_input"
+                placeholder="Enter a task..." 
+                required
+            >
+            <button type="submit">Add</button>
+        </div>
+    </form>
+
+    <ul id="to_do_list" class="to_do_list">
+        <li>Homework</li>
+        <li>Go to the SITE's Senate meeting</li>
+        <li>Read "Қызыл Жебе"</li>
+        <li>Feed a cat</li>
+        <li></li>
+        <li></li>
+    </ul>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

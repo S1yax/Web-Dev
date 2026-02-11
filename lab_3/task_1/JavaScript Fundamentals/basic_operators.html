@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Operators</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script>
+            let a = 1, b = 1;
+
+            let c = ++a; // (*)
+            let d = b++; // (**)
+
+            alert(a); // 2
+            alert(b); // 2
+            alert(c); // 2
+            alert(d); // 1
+
+            // Addition +,
+            // Subtraction -,
+            // Multiplication *,
+            // Division /,
+            // Remainder %,
+            // Exponentiation **.
+
+            //Concatination
+            let s = "my" + "string";
+            alert(s); // mystring
+
+            alert(2 + 2 + '1' ); // "41" and not "221"
+            alert('1' + 2 + 2); // "122" and not "14"
+            //it is only work with addition, other operators work as expected with numbers
+            alert(6 - '2'); // 4
+            alert('6' / '2'); // 3
+
+            //assignment returns a value
+            let a = 1, b = 2;
+
+           
+            let c = 3 - ( a = b + 1); 
+
+            alert( a ); // 3
+            alert( c ); // 0
+
+            //chaining assignment
+            let d, e, f;
+            d = e = f = 2 + 2;
+            alert( d ); // 4
+            alert( e ); // 4
+            alert( f ); // 4    
+
+            //modifying in place
+            let n = 2;
+            n = n + 5;
+            n += 5; // the same as n = n + 5
+            alert(n); // 12
+
+
+        </script>
+    </body>
+</html>

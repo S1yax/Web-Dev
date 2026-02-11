@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logical Operations Task</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script>
+            //Task 1
+            alert( null || 2 || undefined ); // result: 2
+
+            //Task 2
+            alert( alert(1) || 2 || alert(3) ); // result: 1, 2
+
+            //Task 3
+            alert( 1 && null && 2 ); // result: null
+
+            //Task 4
+            alert( alert(1) && alert(2) ); // result: 1, undefined
+
+            //Task 5
+            alert( null || 2 && 3 || 4 ); // result: 3
+
+            //Task 6
+            let age = prompt('What is your age?', 18);
+            if (age >= 14 && age <= 90) {
+                alert('Your age is between 14 and 90');
+            }
+
+            //Task 7
+            let age2 = prompt('What is your age?', 18);
+            if (age2 < 14 || age2 > 90) {
+                alert('Your age is NOT between 14 and 90');
+            }
+
+            //Task 8
+            if (-1 || 0) alert( 'first' );
+            if (-1 && 0) alert( 'second' );
+            if (null || -1 && 1) alert( 'third' ); // result: first, third
+
+            //Task 9
+            let userName = prompt('Who is there?', '');
+            if (userName === 'Admin') {
+                let pass = prompt('Password?', '');
+                if (pass === 'TheMaster') {
+                    alert('Welcome!');
+                } else if (pass === '' || pass === null) {
+                    alert('Canceled');
+                } else {
+                    alert('Wrong password');
+                }
+            } else if (userName === '' || userName === null) {
+                alert('Canceled');
+            } else {
+                alert("I don't know you");
+            }
+        </script>
+    </body>
+</html>
