@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+.env.*
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# Static files (если будешь использовать collectstatic)
+staticfiles/
+
+# Media files (если будут загружаться)
+media/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# PyCharm / IntelliJ
+.idea/
+
+# Migrations (иногда можно оставить, но обычно игнорят)
+**/migrations/*
+!**/migrations/__init__.py
+
+# Test / coverage
+.coverage
+htmlcov/
+
+# dotenv
+.env
+
+# Node (если вдруг Angular рядом)
+node_modules/
+dist/
+
+# OS files
+Thumbs.db
