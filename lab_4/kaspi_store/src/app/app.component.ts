@@ -1,14 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import {RouterOutlet, ɵEmptyOutletComponent} from '@angular/router';
-import {ProductCardComponent} from './products/product-card/product-card.component';
-import {NgForOf} from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { RouterOutlet } from '@angular/router';
+import { ProductCardComponent } from './products/product-card/product-card.component';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
+// Создайте интерфейс для продукта
+export interface Product {
+  image: string;
+  name: string;
+  description: string;
+  price: number;
+  link: string;
+  rating: number;
+  commentsNumber: number;
+  commentsLink: string;
+  inStock?: boolean;  // Добавляем опциональные поля для функционала лайков/удаления
+  likes?: number;
+  id?: number;
+}
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ɵEmptyOutletComponent, ProductCardComponent, NgForOf, FormsModule],
+  standalone: true, // Добавьте это для Angular 17+
+  imports: [RouterOutlet, ProductCardComponent, CommonModule, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
